@@ -131,13 +131,14 @@ const AdminSideNav: React.FC = () => {
       <div className="h-screen hidden lg:flex flex-col justify-between sticky top-0 left-0 bg-white dark:bg-darkBackground border-r-gray-200 dark:border-r-gray-700 border-r">
         <div>
           <div className="flex items-center justify-center mb-4 mt-2">
-            <Image
+            {/* <Image
               src={!collapsed ? "/images/logo1.png" : "/images/logo-small.png"}
               alt="Logo"
               width={collapsed ? 40 : 180}
               height={collapsed ? 40 : 80}
               className="transition-all duration-300"
-            />
+            /> */}
+            <h1>AMC Logo</h1>
           </div>
           <Menu
             style={{
