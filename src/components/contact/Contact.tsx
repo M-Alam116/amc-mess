@@ -22,7 +22,7 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
           <div className="hidden lg:flex lg:justify-center lg:items-center">
             <Image
-              src="/contact.svg"
+              src="/images/contact.svg"
               width={563}
               height={683}
               alt="contact us"
