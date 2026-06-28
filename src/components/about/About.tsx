@@ -10,12 +10,12 @@ const About = () => {
               Fresh, Fast & Flavorful – Right at Your Doorstep!
             </h1>
             <p className="text-[16px] opacity-70">
-              Welcome to mess management system! We’re dedicated to bringing your favorite
+              Welcome to Mess Management System! We’re dedicated to bringing your favorite
               meals straight to your door with speed, freshness, and care. From
               local favorites to global cuisines, our platform connects you to
               top restaurants in your area, ensuring a seamless and delicious
               food ordering experience. Whether it's breakfast, lunch, dinner,
-              or a midnight snack, mess management system has got you covered. Satisfy your
+              or a midnight snack, Mess Management System has got you covered. Satisfy your
               cravings with just a few clicks!
             </p>
           </div>
@@ -50,7 +50,7 @@ const About = () => {
             Meet Our Team!
           </h1>
           <p className="text-[16px] opacity-70">
-            At mess management system, our passionate team of food lovers, tech experts, and
+            At Mess Management System, our passionate team of food lovers, tech experts, and
             customer service pros work together to create the ultimate food
             delivery experience. We partner with local restaurants, ensuring you
             get a wide range of fresh and delicious options, all delivered with

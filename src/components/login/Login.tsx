@@ -25,7 +25,7 @@ const Login = () => {
     console.log(values);
   };
   return (
-    <main className="min-h-screen flex items-center justify-center p-4 bg-white">
+    <main className="min-h-screen flex items-center justify-center p-4 pt-24 bg-white">
       <div className="container grid grid-cols-1 lg:grid-cols-2">
         <div className="hidden lg:flex justify-center items-center">
           <div className="relative w-full max-w-xl aspect-square">
@@ -59,11 +59,7 @@ const Login = () => {
             </p>
           </div>
 
-          <div className="flex items-center justify-center text-sm">
-            <hr className="flex-grow border-t border-gray-300" />
-            <span className="px-2 text-gray-500">Or</span>
-            <hr className="flex-grow border-t border-gray-300" />
-          </div>
+
 
           <Form
             form={form}

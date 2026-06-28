@@ -27,7 +27,7 @@ const FoodCard = ({
         />
       }
       actions={[
-        <span className="text-yellow font-bold" key="price">
+        <span className="text-black font-bold" key="price">
           PKR {price}
         </span>,
         <Button
@@ -45,7 +45,7 @@ const FoodCard = ({
           </span>
         }
         description={
-          <span className="truncate block" title={description}>
+          <span className="line-clamp-2 block" title={description}>
             {description}
           </span>
         }

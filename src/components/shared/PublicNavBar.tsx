@@ -25,8 +25,8 @@ const PublicNavBar = () => {
     };
 
     const handleResize = () => {
-      setIsMobile(window.innerWidth < 768);
-      if (window.innerWidth >= 768) {
+      setIsMobile(window.innerWidth <= 1024);
+      if (window.innerWidth > 1024) {
         setIsDrawerOpen(false);
       }
     };
@@ -53,7 +53,7 @@ const PublicNavBar = () => {
   return (
     <>
       <Drawer
-        title={<Logo />}
+        title={<Logo scrolled={true} />}
         onClose={toggleDrawer}
         open={isDrawerOpen && isMobile}
         placement="left"
@@ -87,7 +87,7 @@ const PublicNavBar = () => {
           }`}
       >
         <div className="container mx-auto flex items-center justify-between gap-4 px-6 py-4">
-          <Logo />
+          <Logo scrolled={scrolled} />
 
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => (
@@ -95,12 +95,12 @@ const PublicNavBar = () => {
                 key={item.key}
                 href={item.href}
                 className={`text-sm font-medium transition-colors ${scrolled
-                    ? pathname === item.href
-                      ? "text-black bg-yellow px-4 py-1 rounded-full"
-                      : "text-black"
-                    : pathname === item.href
-                      ? "text-black bg-yellow px-4 py-1 rounded-full"
-                      : "text-white"
+                  ? pathname === item.href
+                    ? "text-black bg-yellow px-4 py-1 rounded-full"
+                    : "text-black"
+                  : pathname === item.href
+                    ? "text-black bg-yellow px-4 py-1 rounded-full"
+                    : "text-white"
                   }`}
               >
                 {item.label}
