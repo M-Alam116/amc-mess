@@ -1,8 +1,10 @@
+import Link from "next/link";
+
 const Logo = () => {
   return (
-    <div className="">
-      <h1 className="text-yellow text-lg font-bold">AMC Logo</h1>
-    </div>
+    <Link href="/home" className="">
+      <h1 className="text-yellow text-lg font-bold">Mess Management System</h1>
+    </Link>
   );
 };
 

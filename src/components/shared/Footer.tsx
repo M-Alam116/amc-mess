@@ -26,22 +26,22 @@ const Footer = () => {
             <h3 className="font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/public/home" className="text-sm opacity-80">
+                <Link href="/home" className="text-sm opacity-80">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="/public/menu" className="text-sm opacity-80">
+                <Link href="/menu" className="text-sm opacity-80">
                   Menu
                 </Link>
               </li>
               <li>
-                <Link href="/public/about" className="text-sm opacity-80">
+                <Link href="/about" className="text-sm opacity-80">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/public/contact" className="text-sm opacity-80">
+                <Link href="/contact" className="text-sm opacity-80">
                   Contact
                 </Link>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-500 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-sm opacity-80">
-            © {new Date().getFullYear()} AMC. All rights reserved.
+            © {new Date().getFullYear()} mess management system. All rights reserved.
           </p>
           <div className="flex space-x-4">
             <Link href="#" className="text-gray-300 hover:text-yellow">

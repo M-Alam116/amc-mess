@@ -2,17 +2,11 @@ import { Metadata } from "next";
 import { redirect } from "next/navigation";
 
 export const metadata: Metadata = {
-  title: "Home | AMC",
+  title: "Home | Mess Management system",
 };
 
 const HomePage = () => {
-  redirect("/public/home");
-
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
+  redirect("/home");
 };
 
 export default HomePage;

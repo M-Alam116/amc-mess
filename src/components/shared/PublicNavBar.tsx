@@ -44,10 +44,10 @@ const PublicNavBar = () => {
   }, []);
 
   const navItems = [
-    { key: "home", label: "Home", href: "/public/home" },
-    { key: "menu", label: "Menu", href: "/public/menu" },
-    { key: "about", label: "About Us", href: "/public/about" },
-    { key: "contact", label: "Contact", href: "/public/contact" },
+    { key: "home", label: "Home", href: "/home" },
+    { key: "menu", label: "Menu", href: "/menu" },
+    { key: "about", label: "About Us", href: "/about" },
+    { key: "contact", label: "Contact", href: "/contact" },
   ];
 
   return (
@@ -64,9 +64,8 @@ const PublicNavBar = () => {
             <Link
               key={item.key}
               href={item.href}
-              className={`text-lg font-medium ${
-                pathname === item.href ? "text-yellow" : "text-black"
-              }`}
+              className={`text-lg font-medium ${pathname === item.href ? "text-yellow" : "text-black"
+                }`}
               onClick={toggleDrawer}
             >
               {item.label}
@@ -84,9 +83,8 @@ const PublicNavBar = () => {
       </Drawer>
 
       <header
-        className={`fixed top-0 z-50 w-full transition-all duration-300 ${
-          scrolled ? "bg-white shadow-md" : "bg-transparent"
-        }`}
+        className={`fixed top-0 z-50 w-full transition-all duration-300 ${scrolled ? "bg-white shadow-md" : "bg-transparent"
+          }`}
       >
         <div className="container mx-auto flex items-center justify-between gap-4 px-6 py-4">
           <Logo />
@@ -96,15 +94,14 @@ const PublicNavBar = () => {
               <Link
                 key={item.key}
                 href={item.href}
-                className={`text-sm font-medium transition-colors ${
-                  scrolled
+                className={`text-sm font-medium transition-colors ${scrolled
                     ? pathname === item.href
                       ? "text-black bg-yellow px-4 py-1 rounded-full"
                       : "text-black"
                     : pathname === item.href
-                    ? "text-black bg-yellow px-4 py-1 rounded-full"
-                    : "text-white"
-                }`}
+                      ? "text-black bg-yellow px-4 py-1 rounded-full"
+                      : "text-white"
+                  }`}
               >
                 {item.label}
               </Link>
@@ -123,9 +120,8 @@ const PublicNavBar = () => {
           {isMobile && (
             <GiHamburgerMenu
               onClick={toggleDrawer}
-              className={`text-2xl cursor-pointer md:hidden transition-colors duration-300 ${
-                scrolled ? "text-black" : "text-white"
-              }`}
+              className={`text-2xl cursor-pointer md:hidden transition-colors duration-300 ${scrolled ? "text-black" : "text-white"
+                }`}
             />
           )}
         </div>
